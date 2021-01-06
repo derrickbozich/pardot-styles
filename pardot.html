@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="http://go.pardot.com" />
+    <meta charset="utf-8" />
+    <meta name="description" content="%%description%%" />
+    <title>%%title%%</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style media="screen">
+      #pardot-form {
+        max-width: 800px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0 auto;
+        -webkit-column-gap: 5px;
+        -moz-column-gap: 5px;
+        column-gap: 5px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        background-color: transparent;
+      }
+
+      ​ input:focus {
+        color: #333;
+      }
+
+      input {
+        -ms-flex-preferred-size: 21%;
+        flex-basis: 21%;
+        border: 1px solid #eee;
+        padding: 10px;
+        color: #eee;
+        max-width: 168px;
+        font-family: Karla, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        border-radius: 4px;
+        -webkit-transition: all 0.25s ease;
+        -o-transition: all ease 0.25s;
+        -o-transition: all 0.25s ease;
+        transition: all 0.25s ease;
+      }
+
+      input[type="submit"] {
+        background: -webkit-gradient(
+          linear,
+          left top,
+          right top,
+          from(#e48020),
+          color-stop(65%, #d56e23),
+          color-stop(86%, #cc6225),
+          color-stop(93%, #c45926),
+          to(#b44529)
+        );
+        background: -o-linear-gradient(
+          left,
+          #e48020,
+          #d56e23 65%,
+          #cc6225 86%,
+          #c45926 93%,
+          #b44529
+        );
+        background: linear-gradient(
+          90deg,
+          #e48020,
+          #d56e23 65%,
+          #cc6225 86%,
+          #c45926 93%,
+          #b44529
+        );
+        color: #fff;
+        text-transform: uppercase;
+        font-family: Karla, sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        border-radius: 50px;
+        padding: 13px 19px 15px;
+        max-width: 104px;
+      }
+
+      @media screen and (max-width: 600px) {
+        #pardot-form {
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          -webkit-column-gap: 0px;
+          -moz-column-gap: 0px;
+          column-gap: 0px;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+        }
+
+        input[type="text"] {
+          -ms-flex-preferred-size: 44.9%;
+          flex-basis: 44.9%;
+          margin-bottom: 10px;
+          max-width: calc(80vw / 2);
+          font-size: 19px;
+          letter-spacing: -0.2px;
+          line-height: 28px;
+        }
+        input:nth-of-type(3) {
+          -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+          margin-bottom: 28px;
+          max-width: none;
+        }
+        input[type="submit"] {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    %%content%%
+  </body>
+</html>
