@@ -15,7 +15,9 @@
 
     <style media="screen">
       #pardot-form {
-        max-width: 800px;
+        max-width: 800px !important;
+        padding: 0 !important;
+        box-sizing: border-box;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -28,26 +30,39 @@
         justify-content: center;
         background-color: transparent;
       }
-
-      ​ input:focus {
-        color: #333;
+      p.form-field {
+        margin: 0 !important;
+        padding: 0 !important;
       }
 
-      input {
-        -ms-flex-preferred-size: 21%;
-        flex-basis: 21%;
-        border: 1px solid #eee;
-        padding: 10px;
-        color: #eee;
-        max-width: 168px;
-        font-family: Karla, sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        border-radius: 4px;
-        -webkit-transition: all 0.25s ease;
-        -o-transition: all ease 0.25s;
-        -o-transition: all 0.25s ease;
-        transition: all 0.25s ease;
+      p.form-field label {
+        display: none !important;
+      }
+
+      input:focus {
+        color: #333 !important;
+      }
+
+      p.form-field input {
+        -ms-flex-preferred-size: 21% !important;
+        flex-basis: 21% !important;
+        border: 1px solid #eee !important;
+        padding: 10px !important;
+        color: #eee !important;
+        height: 45px !important;
+        box-sizing: border-box !important;
+        /* max-width: 168px !important; */
+        font-family: Karla, sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 14px !important;
+        border-radius: 4px !important;
+        -webkit-transition: all 0.25s ease !important;
+        -o-transition: all ease 0.25s !important;
+        -o-transition: all 0.25s ease !important;
+        transition: all 0.25s ease !important;
+      }
+      form.form p.submit {
+        margin: 0 !important;
       }
 
       input[type="submit"] {
@@ -60,7 +75,7 @@
           color-stop(86%, #cc6225),
           color-stop(93%, #c45926),
           to(#b44529)
-        );
+        ) !important;
         background: -o-linear-gradient(
           left,
           #e48020,
@@ -68,7 +83,7 @@
           #cc6225 86%,
           #c45926 93%,
           #b44529
-        );
+        ) !important;
         background: linear-gradient(
           90deg,
           #e48020,
@@ -76,48 +91,50 @@
           #cc6225 86%,
           #c45926 93%,
           #b44529
-        );
-        color: #fff;
-        text-transform: uppercase;
-        font-family: Karla, sans-serif;
-        font-weight: 400;
-        font-size: 13px;
-        font-weight: 700;
-        letter-spacing: 1px;
-        border-radius: 50px;
-        padding: 13px 19px 15px;
-        max-width: 104px;
+        ) !important;
+        color: #fff !important;
+        text-transform: uppercase !important;
+        margin: 0 !important;
+        font-family: Karla, sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 13px !important;
+        font-weight: 700 !important;
+        letter-spacing: 1px !important;
+        border-radius: 50px !important;
+        border: 1px solid transparent !important;
+        padding: 13px 19px 15px !important;
+        max-width: 104px !important;
       }
 
       @media screen and (max-width: 600px) {
         #pardot-form {
-          -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-          -webkit-column-gap: 0px;
-          -moz-column-gap: 0px;
-          column-gap: 0px;
-          -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-          justify-content: space-between;
+          -ms-flex-wrap: wrap !important;
+          flex-wrap: wrap !important;
+          -webkit-column-gap: 0px !important;
+          -moz-column-gap: 0px !important;
+          column-gap: 0px !important;
+          -webkit-box-pack: justify !important;
+          -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
         }
 
         input[type="text"] {
-          -ms-flex-preferred-size: 44.9%;
-          flex-basis: 44.9%;
-          margin-bottom: 10px;
-          max-width: calc(80vw / 2);
-          font-size: 19px;
-          letter-spacing: -0.2px;
-          line-height: 28px;
+          -ms-flex-preferred-size: 44.9% !important;
+          flex-basis: 44.9% !important;
+          margin-bottom: 10px !important;
+          max-width: calc(80vw / 2) !important;
+          font-size: 19px !important;
+          letter-spacing: -0.2px !important;
+          line-height: 28px !important;
         }
         input:nth-of-type(3) {
-          -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
-          margin-bottom: 28px;
-          max-width: none;
+          -ms-flex-preferred-size: 100% !important;
+          flex-basis: 100% !important;
+          margin-bottom: 28px !important;
+          max-width: none !important;
         }
         input[type="submit"] {
-          font-size: 14px;
+          font-size: 14px !important;
         }
       }
     </style>
